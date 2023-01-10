@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>Health on us</title>
+    <style>
+        .A1 {
+            display: flex;
+            justify-content: right;
+            color: rgb(235, 235, 235);
+            padding-right: 5px; 
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:white;
+            padding-top: 30px;
+
+        }
+
+       
+        header a {
+            float: left;
+            padding-inline-start: 5px;
+
+
+        }
+        input{
+            line-height: 30px;
+        }
+        td,th{
+            font-size: 20px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            padding: 30px;
+            font-size: large;
+            position: relative;
+        }
+
+        div {
+            background-color: rgb(24, 2, 100);
+            color: aliceblue;
+        }
+        .btn{
+            background-color: aqua;
+            border-radius: 20px;
+            border:0px;
+        }
+        .btn:hover{
+                 background-color: rgb(255, 50, 211);
+                }
+            body{
+                background-image: url('health.png');
+                width:auto;
+                height: auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                 background-size: cover;
+
+            }
+    </style>
+</head>
+
+<body  style="background-color: blanchedalmond; ">
+    <header>
+        <h1> Health on us</h1>
+        <nav>
+            <span>
+            <a class="A1" href="home.html" >Home |</a>
+            <a class="A1" href="profile.html" >Profile |</a>
+            <a class="A1" href="dashboard.html" >Dashboard |</a></span>
+        </nav>
+    </header>
+    <form>
+
+        <table>
+            <tr>
+                <th colspan="2" style="padding:10px"><label>Registration Form</label></th>
+            </tr>
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text" id="fname" placeholder="Enter name" required /></td>
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td><input type="text" id="lname" placeholder="Enter name" required />
+            </tr>
+            </td>
+            </tr>
+            <tr>
+                <td><label>Age</label></td>
+                <td><input type="number" id="age" min="0" max="21" placeholder="Enter age"></td>
+            </tr>
+
+
+            <tr>
+                <td> <label>Gender</label></td>
+                <td> <input type="radio" name="gender" id="male">Male</input>
+                    <input type="radio" name="gender" id="femle"> Female</input>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" id="mail" placeholder="Enter email" required /></td>
+            </tr>
+            <tr>
+                <td><label>phone no</label></td>
+                <td><input type="text" id="ph" placeholder="Enter ph number" required /></td>
+            </tr>
+            <tr aria-colspan="2">
+                <td> <input type="checkbox" id="agree"> <label>I agree</label></td>
+            </tr>
+            <tr>
+                <td ><input type="submit"  id="submit" class="btn" ></td>
+            </tr>
+             <tr>
+                <td ><input type="submit"  id="submit" class="btn" ></td>
+            </tr>
+            
+
+        </table>
+    </form>
+
+</body>
+
+</html>
